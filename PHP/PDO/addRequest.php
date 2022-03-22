@@ -4,7 +4,7 @@ require_once 'updateRequest.php';
 
 function addTopic($nom, $idcour) {
     global $topicsTable, $PDO;
-    $query = "INSERT INTO $topicsTable (nom, npPost, d_last_mess, idCour) ".
+    $query = "INSERT INTO $topicsTable (nom, nbPost, d_last_mess, idCour) ".
         "VALUES (?, 0, ?, ?)";
 
     $data = [$nom, date('Y-m-d'), $idcour];

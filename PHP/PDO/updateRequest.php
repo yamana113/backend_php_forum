@@ -3,7 +3,7 @@
 function majPost($idcour) {
     global $coursesTable, $PDO;
     $query = "UPDATE $coursesTable ".
-        "SET nbPost = nbPost + 1 ".
+        "SET nbTopics = nbTopics + 1 ".
         "WHERE idcour = ?";
 
     $data = [$idcour];
